@@ -1,0 +1,4 @@
+<h2>Stocks that have been retrieved</h2>
+<div *ngFor="let stock of stocks">
+    <a [routerLink]="['/stocks', stock.id]"><h3>{{stock.name}}</h3></a>
+</div>
