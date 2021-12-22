@@ -1,0 +1,11 @@
+.current-value {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.current-value:hover {
+    border: 2px solid green;
+    box-shadow: 2px 2px 1px black;
+}

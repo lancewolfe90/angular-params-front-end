@@ -1,0 +1,42 @@
+<div class="container-main">
+  <div class="container-name">
+    <div *ngIf="!nameTouched">
+      <span (click)="toggleName()" class="current-value span-name">{{
+        this.stock.name
+      }}</span>
+    </div>
+    <input
+      [(ngModel)]="this.stock.name"
+      (blur)="toggleName()"
+      *ngIf="nameTouched"
+      placeholder="{{ this.stock.name }}"
+    />
+  </div>
+  <div class="container-symbol">
+    <div *ngIf="!symbolTouched">
+      <span (click)="toggleSymbol()" class="current-value span-symbol">{{
+        this.stock.symbol
+      }}</span>
+    </div>
+    <input
+      [(ngModel)]="this.stock.symbol"
+      (blur)="toggleSymbol()"
+      *ngIf="symbolTouched"
+      placeholder="{{ this.stock.symbol }}"
+    />
+  </div>
+  <div class="container-price">
+    <div *ngIf="!priceTouched">
+      <span (click)="togglePrice()" class="current-value span-price">{{
+        this.stock.currentPrice
+      }}</span>
+    </div>
+    <input
+      [(ngModel)]="this.stock.currentPrice"
+      (blur)="togglePrice()"
+      *ngIf="priceTouched"
+      placeholder="{{ this.stock.currentPrice }}"
+    />
+  </div>
+</div>
+<a routerLink="" (click)="editStock(this.stock)"><span>Back to list</span></a>

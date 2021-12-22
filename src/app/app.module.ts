@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { StocksListComponent } from './stocks-list/stocks-list.component';
 import { StockComponent } from './stock/stock.component';
 import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksListComponent,
     StockComponent,
-    CreateComponent
+    CreateComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
