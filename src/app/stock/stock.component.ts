@@ -6,22 +6,30 @@ import { StockService } from '../stock.service';
 @Component({
   selector: 'app-stock',
   templateUrl: './stock.component.html',
-  styleUrls: ['./stock.component.scss']
+  styleUrls: ['./stock.component.scss'],
 })
 export class StockComponent implements OnInit {
+  formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
   stock: Stock = {
     name: '',
     symbol: '',
     currentPrice: 0,
-    id: 0
+    id: 0,
   };
 
-  constructor(private route: ActivatedRoute, private stockService: StockService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private stockService: StockService
+  ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
+    this.route.params.subscribe((params) => {
       const stockId = params['id'];
-      this.stockService.getStock(stockId).subscribe(payload => {
+      this.stockService.getStock(stockId).subscribe((payload) => {
         this.stock = payload;
       });
     });

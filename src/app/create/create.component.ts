@@ -20,10 +20,7 @@ export class CreateComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onSubmit(formValues: NgForm) {
-    // this.newStock.name = formValues.value.name;
-    // this.newStock.symbol = formValues.value.symbol;
-    // this.newStock.currentPrice = formValues.value.currentPrice;
+  onSubmit() {
     this.stockService.addStock(this.newStock).subscribe();
   }
 }

@@ -6,10 +6,10 @@
       }}</span>
     </div>
     <input
-      [(ngModel)]="this.stock.name"
+      [(ngModel)]="stock.name"
       (blur)="toggleName()"
       *ngIf="nameTouched"
-      placeholder="{{ this.stock.name }}"
+      placeholder="{{ stock.name }}"
     />
   </div>
   <div class="container-symbol">
@@ -19,10 +19,10 @@
       }}</span>
     </div>
     <input
-      [(ngModel)]="this.stock.symbol"
+      [(ngModel)]="stock.symbol"
       (blur)="toggleSymbol()"
       *ngIf="symbolTouched"
-      placeholder="{{ this.stock.symbol }}"
+      placeholder="{{ stock.symbol }}"
     />
   </div>
   <div class="container-price">
@@ -32,11 +32,11 @@
       }}</span>
     </div>
     <input
-      [(ngModel)]="this.stock.currentPrice"
+      [(ngModel)]="stock.currentPrice"
       (blur)="togglePrice()"
       *ngIf="priceTouched"
-      placeholder="{{ this.stock.currentPrice }}"
+      placeholder="{{ stock.currentPrice }}"
     />
   </div>
 </div>
-<a routerLink="" (click)="editStock(this.stock)"><span>Back to list</span></a>
+<a routerLink="" (click)="editStock(stock)"><span>Back to list</span></a>

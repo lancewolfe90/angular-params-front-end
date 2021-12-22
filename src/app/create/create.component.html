@@ -1,6 +1,6 @@
 <h3>Add new stock info</h3>
 <p>NB: Validation not yet implemented.</p>
-<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+<form>
   <input
     type="text"
     [(ngModel)]="newStock.name"
@@ -22,8 +22,6 @@
     name="currentPrice"
     placeholder="Price"
   />
-  <button type="button" (click)="onSubmit(myForm)" routerLink="">
-    Create it
-  </button>
+  <button type="button" (click)="onSubmit()" routerLink="">Create it</button>
 </form>
 <a routerLink=""><span>Back to list</span></a>
