@@ -1,30 +1,119 @@
+body {
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    90deg,
+    rgb(12, 153, 94),
+    rgb(110, 182, 110),
+    rgb(12, 153, 94)
+  );
+  color: rgb(20, 35, 173);
+}
+
+a {
+  color: black;
+}
+
+a:active {
+  color: steelblue;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 20px 0;
+  background-color: rgb(75, 95, 75);
+  box-shadow: 12px 12px 10px rgb(75, 95, 75);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+input {
+  color: darkred;
+  background-color: darkgray;
+  margin-bottom: 5px;
+}
+
+input::placeholder {
+  color: darkred;
+}
+
+.subtitle {
+  color: black;
+  margin-top: -25px;
+  margin-bottom: -20px;
+}
+
+.stock-list-container {
+  box-shadow: 2px 2px 5px darkgreen;
+  margin: auto;
+  max-width: 50%;
+  background-color: rgb(66, 126, 113);
+}
+
+.stock-list-container a {
+  text-align: center;
+}
+
+.stock-container,
+.container-main {
+  margin-top: 50px;
+}
+
+.textBtn {
+  background-color: darkslategray;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 15px;
+}
+
 .textBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .addBtn {
-    color: blue;
+  color: rgb(0, 0, 129);
 }
 
 .addBtn:hover {
-    color: white;
-    background-color: blue;
+  color: white;
+  background-color: rgb(0, 0, 125);
+}
+
+.addBtn:active {
+  background-color: turquoise;
 }
 
 .deleteBtn {
-    color: red;
+  color: rgb(125, 0, 0);
 }
 
 .deleteBtn:hover {
-    color: white;
-    background-color: red;
+  color: white;
+  background-color: rgb(125, 0, 0);
+}
+
+.deleteBtn:active {
+  background-color: pink;
 }
 
 .editBtn {
-    color: green;
+  color: rgb(0, 125, 0);
 }
 
 .editBtn:hover {
-    color: white;
-    background-color: green;
+  color: white;
+  background-color: rgb(0, 125, 0);
+}
+
+.editBtn:active {
+  background-color: palegreen;
 }

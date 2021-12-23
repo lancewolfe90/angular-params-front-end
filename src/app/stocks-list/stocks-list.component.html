@@ -1,5 +1,7 @@
 <h2>Stocks that have been retrieved</h2>
-<div *ngFor="let stock of stocks">
-    <a [routerLink]="['/stocks', stock.id]"><h3>{{stock.name}}</h3></a>
+<div *ngFor="let stock of stocks" class="stock-list-container">
+  <a [routerLink]="['/stocks', stock.id]"
+    ><h3>{{ stock.name }}</h3></a
+  >
 </div>
-<span routerLink='/create' class='textBtn addBtn'>Add a new stock?</span>
+<span routerLink="/create" class="textBtn addBtn">Add a new stock?</span>
