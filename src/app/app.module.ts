@@ -15,15 +15,10 @@ import { EditComponent } from './edit/edit.component';
     StocksListComponent,
     StockComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

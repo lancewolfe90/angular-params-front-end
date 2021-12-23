@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Stock } from '../stock.model';
 import { StockService } from '../stock.service';
 

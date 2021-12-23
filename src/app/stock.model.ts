@@ -1,6 +1,6 @@
 export interface Stock {
-    name: string,
-    symbol: string,
-    currentPrice: number,
-    id: number
+  name: string;
+  symbol: string;
+  currentPrice: number;
+  id: number;
 }
